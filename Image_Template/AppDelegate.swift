@@ -1,13 +1,14 @@
 //
 //  AppDelegate.swift
-//  Image_Template
+//  Probably Not
 //
-//  Created by Miguel Sicart on 01/10/2020.
+//  Created by Miguel Angel Sicart on 11/11/2019.
+//  Copyright © 2019 playable_systems. All rights reserved.
 //
 
 import UIKit
 
-@main
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 

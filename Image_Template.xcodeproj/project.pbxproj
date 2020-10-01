@@ -15,6 +15,7 @@
 		42BFBA5F2525F5C100EACE4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42BFBA5D2525F5C100EACE4A /* LaunchScreen.storyboard */; };
 		42BFBA6A2525F5C200EACE4A /* Image_TemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BFBA692525F5C200EACE4A /* Image_TemplateTests.swift */; };
 		42BFBA752525F5C200EACE4A /* Image_TemplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BFBA742525F5C200EACE4A /* Image_TemplateUITests.swift */; };
+		42BFBA912525F75300EACE4A /* UIImageView_xts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BFBA902525F75300EACE4A /* UIImageView_xts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		42BFBA702525F5C200EACE4A /* Image_TemplateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Image_TemplateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42BFBA742525F5C200EACE4A /* Image_TemplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image_TemplateUITests.swift; sourceTree = "<group>"; };
 		42BFBA762525F5C200EACE4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42BFBA902525F75300EACE4A /* UIImageView_xts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView_xts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		42BFBA512525F5BE00EACE4A /* Image_Template */ = {
 			isa = PBXGroup;
 			children = (
+				42BFBA852525F5D100EACE4A /* Extensions */,
 				42BFBA522525F5BE00EACE4A /* AppDelegate.swift */,
 				42BFBA542525F5BE00EACE4A /* SceneDelegate.swift */,
 				42BFBA562525F5BE00EACE4A /* ViewController.swift */,
@@ -126,6 +129,14 @@
 				42BFBA762525F5C200EACE4A /* Info.plist */,
 			);
 			path = Image_TemplateUITests;
+			sourceTree = "<group>";
+		};
+		42BFBA852525F5D100EACE4A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				42BFBA902525F75300EACE4A /* UIImageView_xts.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +271,7 @@
 			files = (
 				42BFBA572525F5BE00EACE4A /* ViewController.swift in Sources */,
 				42BFBA532525F5BE00EACE4A /* AppDelegate.swift in Sources */,
+				42BFBA912525F75300EACE4A /* UIImageView_xts.swift in Sources */,
 				42BFBA552525F5BE00EACE4A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,7 +458,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "software.ridiculous.Image-Template";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -465,7 +477,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "software.ridiculous.Image-Template";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
