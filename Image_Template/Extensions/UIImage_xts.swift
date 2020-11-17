@@ -316,7 +316,23 @@ public extension UIImage
             
             return nil
         }
-
+    
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        
+        // MARK: - APPLYING FILTERS
+    func applying(filter:CIFilter) -> UIImage?
+    {
+        filter.setValue(CIImage(image: self), forKey: kCIInputImageKey)
+        let context = CIContext(options: nil)
+        guard let output = filter.outputImage,
+              let cgImage = context.createCGImage(output, from: output.extent) else {
+            return nil
+        }
+        
+        return UIImage(cgImage: cgImage,
+                       scale: scale,
+                       orientation: imageOrientation)
+    }
 }
 
 

@@ -82,7 +82,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
     //MARK: - IMAGE PROCESSING HAPPENS HERE
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any])
+    {
         if let picture = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
         {
             imageView.image = picture
@@ -100,9 +101,9 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
                 }
             })
             
-            //getFaces(picture: picture)
+            getFaces(picture: picture)
             
-            getSaliency(picture: picture)
+            //getSaliency(picture: picture)
         }
         dismiss(animated: true, completion: nil)
     }
